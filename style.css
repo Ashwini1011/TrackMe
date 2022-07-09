@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  font-family: 'Lato', sans-serif;
+}
+
+.main-container {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding: auto ;
+  color: #555;
+  background-color: #ecf0f3;
+}
+
+.left-form,.right-table{
+  width: 400px;
+  height: 670px;
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  background: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right-table {
+  width: 800px;
+}
+
+.form-logo
+{   width:100px;
+    height:100px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 
+    /* logo shadow */
+    0px 0px 2px #5f5f5f,
+     /* offset shadow  */
+    0px 0px 0px 5px #ecf0f3,
+    /* bottom right */
+    8px 8px 15px #a7aaaf,
+    /* top-right */
+    -8px -8px 15px #ffffff;
+}
+
+.logo-img
+{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.form-title-app
+{
+  text-align: center;
+  font-size: 15px;
+  padding-top: 24px;
+  letter-spacing: 0.5px;
+}
+
+.subtitle
+{
+  text-align: center;
+  font-size: 15px;
+  padding-top: 7px;
+  letter-spacing: 2px;
+}
+
+.form-fields-app
+{
+width:100%;
+padding:75px 5px 5px 5px;
+}
+
+input,select
+{
+border: none;
+outline:none;
+background: none;
+font-size: 16px;
+color:#555;
+padding:20px 10px 20px 5px;
+cursor: pointer;
+width: 90%;
+text-align: center;
+}
+
+select
+{
+width:87%;
+}
+
+.date-div,.select-div,.number-div
+{
+  margin-bottom: 30px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1,
+              inset -8px -8px 8px #ffffff;
+  cursor: pointer;
+}
+
+.submit-button
+{
+  height:60px;
+  width:100%;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color:#fff;
+  text-align: center;
+  background: #24cfaa;
+  box-shadow: inset 8px 8px 8px #1da88a,
+              inset -8px -8px 8px #4cdabb;
+  transition: 0.5s;
+}
+
+.submit-button:hover
+{
+  background: #2fdbb6;
+}
+
+.submit-button:active
+{
+  background: #1da88a;
+}
+
+/* Right Side table css */
+.right-table {
+  width: 800px;
+  padding-top: 35px;
+}
+
+
+.th-sr,.tr-sr
+{
+  width:19px;
+  text-align: center;
+}
+
+.th-date,.tr-date
+{
+  width:72px;
+  text-align: center;
+
+}
+
+.th-workout,.tr-workout
+{
+  width:110px;
+  text-align: center;
+
+}
+
+.th-duration,.tr-duration
+{
+  width:66px;
+  text-align: center;
+
+}
+
+.th-edit,.tr-edit
+{
+  width:31px;
+  text-align: center;
+
+}
+
+.th-delete,.tr-delete
+{
+  width:49px;
+  text-align: center;
+
+}
+
+.table-column-name
+{
+width:100%;
+height:70px;
+padding:0 25px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: space-between;
+color:#555;
+  margin-bottom: 30px;
+  border-radius: 35px;
+  box-shadow: 8px 8px 8px #cbced1, -8px -8px 8px #ffffff;
+  cursor: pointer;
+}
+
+.table-row-data
+{
+width:100%;
+height:70px;
+padding:0 25px;
+display: flex;
+align-items: center;
+text-align: center;
+justify-content: space-between;
+color:#555;
+  margin-bottom: 18px;
+  box-shadow: 8px 8px 8px #cbced1, -8px -8px 8px #ffffff;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size:14px;
+  height:40px;
+  font-weight: 600;    
+}
+
+.table-row-container
+{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height: 530px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px #cbced1, -8px -8px 8px #ffffff;
+}
+
+.workout-tr
+{
+  width:110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit_btn,.delete_btn
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:40px;
+}
+
+.edit_btn a,.delete_btn a
+{
+color:#555;
+}

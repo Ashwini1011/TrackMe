@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Css stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <title>Track Me</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="left-form">
+      <div class="form-logo">
+        <img src="https://www.countit.com/images/wearable-icon-blue.png" class="logo-img">
+      </div>
+      <div class="form-title-app">Track Me</div>
+      <div class="subtitle">The best workout tracker</div>
+      <div class="form-fields-app">
+        <form>
+          <div class="date-div"><input type="date" id="tracker_date" placeholder="Select Data"/></div>
+          <div class="select-div">   
+            <select class="tracker_workout" id="tracker_select" placeholder="Select Workout">
+             <option>Select workout type</option> 
+            <option value="walking">Walking</option>
+            <option value="running">Running</option>
+            <option value="swimming">Swimming</option>
+            <option value="yoga">Yoga</option>
+            <option value="outdoor_cycling">Outdoor Cycling</option>
+            <option value="indoor_cycling">Indoor Cycling</option>
+          </select>
+          </div>
+          <div class="number-div"><input type="number" id="tracker_number" placeholder="Select time in minute"></div>
+          <input type="button" value="Submit" onclick="saveOrEditData()" class="submit-button"/>
+        </form>
+        <div id="datemsg"></div>
+        <div id="selectmsg"></div>
+        <div id="numbermsg"></div>
+      </div>
+    </div>
+<!--Right Side Table -->
+    <div class="right-table">
+      <div class="table-column-name">
+        <div class="th-sr">Sr</div>
+        <div class="th-date">Date</div>
+        <div class="th-workout">Workout</div>
+        <div class="th-duration">Duration</div>
+        <div class="th-edit">Edit</div>
+        <div class="th-delete">Delete</div>
+      </div>
+
+      <!-- Row for data -->
+      <div class="table-row-container" id="table-row-container">
+        <!-- Dynamic data from javascript -->
+      </div>
+    </div>
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>
